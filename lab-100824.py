@@ -89,7 +89,19 @@ def illegal_assignment():
     my_var = 1
     '''
 
+def number_pattern():
+    number = int(input("user number"))
+    print (str(number) * number)
 
+from numpy import random
 
-
-
+def selection_sort():
+    array = ""
+    array = random.randint(100, size=(10))
+    for i in range(len(array)):
+        for x in range(len(array-i)):
+            if array[i] < array[x]:
+                array[i], array[x] = array[x], array[i]
+    print(array)
+    
+selection_sort()
