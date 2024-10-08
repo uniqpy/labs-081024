@@ -89,6 +89,11 @@ def illegal_assignment():
     my_var = 1
     '''
 
+def print_first_digit():
+    value = int(input("input int"))
+    valuestr = str(value)
+    print(valuestr[0])
+
 def number_pattern():
     number = int(input("user number"))
     print (str(number) * number)
@@ -103,5 +108,5 @@ def selection_sort():
             if array[i] < array[x]:
                 array[i], array[x] = array[x], array[i]
     print(array)
-    
-selection_sort()
+
+print_first_digit()
